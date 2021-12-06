@@ -1,3 +1,12 @@
+1.
+CREATE TABLE animals(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(40) NOT NULL,
+  type VARCHAR(40),
+  age INTEGER
+);
+
+2.
 -- INSERT INTO animals ( name, type, age ) 
 -- VALUES ('Leo', 'lion', 12),
 -- ('Jerry', 'mouse', 4),
@@ -8,3 +17,15 @@
 -- ('Nala', 'lion', 2),
 -- ('Marie', 'cat', 1),
 -- ('Flounder', 'fish', 8);
+
+3.
+SELECT * FROM animals;
+
+4.
+DELETE FROM animals WHERE type = 'lion';
+
+5.
+DELETE FROM animals WHERE type like 'm%';
+
+6.
+DELETE FROM animals WHERE age < 9;
